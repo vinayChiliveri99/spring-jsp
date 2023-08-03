@@ -16,7 +16,7 @@
 			transform: translate(-50%, -50%);
 		}
 		
-		h3 {
+		h3,h1 {
 			text-align: center;
 		}
 	</style>
@@ -27,9 +27,11 @@
 	
 	<h2>${errorMsg}</h2>
 	<br><br><br>
-	    <h3> Toyota Application Management System </h3>  
+	    <h3> Toyota Application Management System </h3> 
+	    <br> 
+	    <h1>Login Page</h1>
 	<div class="login-form">
-	
+		
 		<div class="container-fluid">
 			<form method = "post">
 			<br>
