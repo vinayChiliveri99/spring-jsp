@@ -13,9 +13,9 @@ public class TodoService {
 	private static List<Todo> todos = new ArrayList<>();
 	
 	static {
-		todos.add(new Todo(1, "admin", "learn spring", LocalDate.now().plusMonths(3), false));
-		todos.add(new Todo(1, "admin", "learn jsps", LocalDate.now().plusMonths(5), false));
-		todos.add(new Todo(1, "admin", "learn angular", LocalDate.now().plusMonths(7), false));
+		todos.add(new Todo(1, "admin", "Learn spring", LocalDate.now().plusMonths(3), false));
+		todos.add(new Todo(2, "admin", "Learn jsps", LocalDate.now().plusMonths(5), false));
+		todos.add(new Todo(3, "admin", "Learn angular", LocalDate.now().plusMonths(7), false));
 
 	}
 	
