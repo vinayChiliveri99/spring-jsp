@@ -46,7 +46,7 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" class="form-control mt-3" required />
                 <br>
-                <div>
+                <div class="login-button">
                 <button class="btn btn-dark btn-block mt-3">Login</button>
                 </div>
                 <div class="mt-3 text-center">
