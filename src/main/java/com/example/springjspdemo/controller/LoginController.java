@@ -16,7 +16,7 @@ public class LoginController {
 		return "login";
 	}
 	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "login", method = RequestMethod.POST)
 	public String welcomePage(ModelMap model, @RequestParam String userId, @RequestParam String password) {
 		if(userId.length() > 12) {
 			model.put("errorMsg", "Maximum characters allowed is 12 for username");

@@ -42,12 +42,13 @@
             <form method="post">
                 <br>
                 <label for="userId">UserID</label>
-                <input type="text" id="userId" name="userId" class="form-control mt-3" required /><br>
+                <input type="text" id="userId" name="userId" class="form-control mt-3" required />
+                <br>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" class="form-control mt-3" required />
                 <br>
                 <div class="login-button">
-                <button class="btn btn-dark btn-block mt-3">Login</button>
+                    <button class="btn btn-dark btn-block mt-3">Login</button>
                 </div>
                 <div class="mt-3 text-center">
                     <a href="/forgot-password">Forgot Password?</a>

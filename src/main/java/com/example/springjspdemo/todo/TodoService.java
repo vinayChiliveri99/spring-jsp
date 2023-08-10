@@ -3,6 +3,9 @@ package com.example.springjspdemo.todo;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
+
+import javax.validation.Valid;
 
 import org.springframework.stereotype.Service;
 
@@ -30,4 +33,29 @@ public class TodoService {
 		Todo todo = new Todo(++todosCount, username, description, targetDate, isdone);
 		todos.add(todo);
 	}
+
+	public void deleteById(int id) {
+		// TODO Auto-generated method stub
+		Predicate<? super Todo> predicate = 
+				todo -> todo.getId() == id;
+		todos.removeIf(predicate);
+		
+	}
+
+	public Todo findByUserId(int id) {
+		// TODO Auto-generated method stub
+		Predicate<? super Todo> predicate = 
+				todo -> todo.getId() == id;
+		Todo todo = todos.stream().filter(predicate).findFirst().get();
+		return todo;
+	}
+
+	public void updateTodo(@Valid Todo todo) {
+		// TODO Auto-generated method stub
+		deleteById(todo.getId());
+		todos.add(todo);
+		
+	}
+
+
 }

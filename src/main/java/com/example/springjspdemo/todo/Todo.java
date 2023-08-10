@@ -2,6 +2,8 @@ package com.example.springjspdemo.todo;
 
 import java.time.LocalDate;
 
+import javax.validation.constraints.Size;
+
 public class Todo {
 
 	public Todo(int id, String username, String description, LocalDate targetDate, boolean isdone) {
@@ -15,6 +17,8 @@ public class Todo {
 
 	private int id;
 	private String username;
+	
+	@Size(min=10, message="Enter atleast 10 characters")
 	private String description;
 	private LocalDate targetDate;
 	private boolean isdone;
