@@ -12,12 +12,12 @@
 			<a class="navbar-brand m-1" href="/welcomePage">ToDo Application</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/welcomePage">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="/list-todos">Todos</a></li>
 				</ul>
 			</div>
 		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="/logout">Log out</a></li>
+			<li class="nav-item"><a class="nav-link" href="/login">Log out</a></li>
 		</ul>	
 	</nav>
 	
